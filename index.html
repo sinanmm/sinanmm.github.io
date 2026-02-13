@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <title></title>
+</head>
+<body>
+    <h1>inte poochakutti nilun oru avva therte</h1>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
 <meta charset="UTF-8">
 <title>For Nilu 💖</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -55,6 +63,24 @@
     0% { transform: translateY(100vh); opacity: 1; }
     100% { transform: translateY(-10vh); opacity: 0; }
   }
+
+  /* 🐱 Cat kiss animation */
+  .cats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 50px;
+    margin-top: 10px;
+  }
+  .kiss {
+    animation: kiss 1.2s infinite;
+  }
+  @keyframes kiss {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+  }
 </style>
 </head>
 <body>
@@ -84,7 +110,10 @@ function nextPage() {
   } else {
     card.innerHTML = `
       <h1>😘</h1>
-      <p>This is a soft kiss<br>just for you 💋💗</p>
+      <div class="cats">
+        🐱 <span class="kiss">💋</span> 🐱
+      </div>
+      <p>This is a cute little kiss<br>just for you 💗</p>
       <p>Happy Valentine’s Day 💘</p>
     `;
   }
